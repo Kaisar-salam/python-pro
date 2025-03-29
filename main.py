@@ -5,7 +5,7 @@ import requests
 images = (os.listdir('photo'))
 
 
-bot=telebot.TeleBot("7712211031:AAG99gaWC85O-GU1OzdnRC5ed8VRsEBL3sw")
+bot=telebot.TeleBot("")
 
 @bot.message_handler(commands=['mem'])
 def send_mem(message):
