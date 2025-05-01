@@ -33,7 +33,7 @@ def electronics(size, lights):
 # Расчет с учетом энергосбережения
 @app.route('/<size>/<lights>/<device>')
 def end(size, lights, device):
-    eco = int(request.args.get('eco', 0))  # eco = 1 если включено, иначе 0
+    eco = int(request.args.get('eco', 0)) 
     result = result_calculate(int(size), int(lights), int(device), eco)
     return render_template('end.html', result=result)
 
